@@ -38,7 +38,7 @@ export const paymentVerification = async (req, res) => {
             razorpay_order_id, razorpay_payment_id, razorpay_signature
         })
 
-        res.redirect(`https://razorpay-backend-edqe.onrender.com/paymentsuccess?reference=${razorpay_payment_id}`)
+        res.redirect(`https://razorpay-frontend-pink.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`)
 
     } else {
         res.status(400).json({
